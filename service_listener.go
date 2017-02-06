@@ -145,7 +145,6 @@ func main() {
 			annotationParent, ok := s.ObjectMeta.Annotations["domainNameParent"]
 			if !ok {
 				glog.Infof("Parent Domain name not set for %s", s.Name)
-				continue
 			}
 
 			domains := strings.Split(annotation, ",")
